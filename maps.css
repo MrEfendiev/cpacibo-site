@@ -1,0 +1,231 @@
+
+@font-face {
+    font-family: "Font-famaly/ProximaNova-Semibold";
+    src: url(/Font-famaly/ProximaNova-Semibold.ttf);
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Font-famaly/Black/ProximaNova-Black";
+    src: url(/Font-famaly/Black/ProximaNova-Extrabld.ttf);
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ProximaNova-Light";
+    src: url(fonts/ProximaNova-Light.woff2);
+  }
+  @font-face {
+    font-family: "ProximaNova-Nova";
+    src: url(Font-famaly/ProximaNova-Extrabld.ttf);
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Font-famaly/ProximaNova-Semibold";
+    src: url(/Font-famaly/ProximaNova-Semibold.ttf);
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Font-famaly/Black/ProximaNova-Black";
+    src: url(/Font-famaly/Black/ProximaNova-Extrabld.ttf);
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+.head__row {
+    margin-top: 42px;
+}
+.head__title h1 {
+        font-family: "Font-famaly/Black/ProximaNova-Black";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 48px;
+
+        color: black;
+
+
+
+ }
+
+ .maps__text{
+    margin-top: 31px;
+    width: 300px;
+    font-family: "ProximaNova-Light.ttf";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 138.34%;
+    opacity: 0.3;
+    letter-spacing: 0.005em;
+
+}
+
+
+.head__flex-button
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .head__button
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 600px;
+     margin-top: -140px;
+     width: 309px;
+     height: 70px;
+
+    background: #F9F9F9;
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
+    border-radius: 15px;
+ }
+
+ .head__button a 
+ {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 138.34%;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+ }
+
+ .head__button img
+ {
+     margin-left: 20px;
+     width: 22px;
+ }
+
+ .maps
+ {
+     margin-top: 47px;
+ }
+
+
+
+.main-maps__input
+{
+    display: flex;
+    position: relative;
+    top: 100px;
+
+}
+
+.main-maps__input input 
+{
+
+    outline: none;
+    margin-left: 48px;
+    text-indent: 33px;
+    position: relative;
+    font-size: 23px;
+
+    width: 602px;
+    height: 50px; 
+
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border: 12px solid #FFFFFF; 
+    border-radius: 12px;
+
+}
+
+
+.main-maps__input input::placeholder
+{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+     color: #969696;
+}
+
+
+.maps-input__button
+{
+    margin-left: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    height: 50px;
+
+    background: #2CC700;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.maps-input__button a
+{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+
+.main-maps__container iframe
+{
+  
+    margin-left: -20%;
+}
+
+.maps__container
+{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-cart__maps {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.maps__content {
+
+    overflow: hidden;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 1280px;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}

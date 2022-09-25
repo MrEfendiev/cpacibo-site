@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- link Swiper's CSS ------------------------------>
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+      <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+ 
+     <!--Font Family ------------------------------------->
+ 
+     <link rel="stylesheet" href="./fonts/stylesheet.css">
+ 
+      <!-- link CCSS------------------------------------->
+      
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/kitchens.css">
+      <link rel="stylesheet" href="css/authorization.css">
+
+    <title>FoodApp</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__rown">
+                <div class="header__logo">
+                    <a href="home.html"><img src="./images/logo.svg" alt=""></a> 
+                </div>
+                <div class="header__navigation">
+                    <li class="header__link"><a class="link__active" href="home.html">Главная</a></li>
+                    <li class="header__link"><a href="about.html">Поиск ресторана</a></li>
+                    <li class="header__link"><a href="Partners.html">Партнерам</a></li>
+                    <li class="header__link"><a href="AboutUs.html">О нас</a></li>
+                </div>
+
+                 <div class="header__auth">
+                    <li class="header__link"><a id="btn_modal_window" class="header__btn" href="#">Войти</a></li>
+                </div>
+               
+                <div class="header__cart">
+                    <a href="Cart.html"><img src="./images/cart.png" alt=""></a>
+                </div>
+
+
+
+            </div>
+           
+            <div class="header__title">
+                <div class="header__image">
+                    <img src="./images/e474812f4f71f3824e2169ea44af9629.png" alt="">
+                </div>
+    
+                    <h1 class="header__subtitle">Domino's Pizza</h1>
+                  
+            </div>
+            <div class="header__text">
+                <p>08:00 - 23:00</p>
+                <span></span>
+                <p>200 рублей</p>
+                <span></span>
+                <p>Бесплатная доставка от 700 руб</p>
+            </div>
+           
+                <div class="header__button">
+                    <div class="header__btn">
+                        <img src="icons/info.png" alt="">
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="header__btn">
+                        <img src="icons/Message.png" alt="">
+                        <a href="Reviews.html">Отзывы (3)</a>
+                    </div>
+                    <div class="header__input">
+                            <input type="text" placeholder="Поиск блюд">
+                    </div>
+                </div>
+        </div>
+        <hr class="kitchens__hr">
+
+    </header>
+
+
+
+    <main class="main__burgers burgers">
+        <div class="burgers__container container">
+            <div class="burgers__row">
+                    <div class="burgers__nav">
+                        <li class=""><a href="#" class="burgers__link">Пицца</a></li>
+                    </div>
+                    <div class="burgers__nav burgers__active">
+                        <li class=""><a href="#" class="burgers__link">Бургеры</a></li>
+                    </div>
+                    <div class="burgers__nav">
+                        <li class=""><a href="#" class="burgers__link">Пицца</a></li>
+                    </div>
+                    <div class="burgers__nav">
+                        <li class=""><a href="#" class="burgers__link">Выпечка</a></li>
+                    </div> <div class="burgers__nav">
+                        <li class=""><a href="#" class="burgers__link">Японская кухня</a></li>
+                    </div> <div class="burgers__nav">
+                        <li class=""><a href="#" class="burgers__link">Выпечка</a></li>
+                    </div>
+                    
+                  <div class="burgers__nav">
+                    <li class=""><a href="#" class="burgers__link">Блюда из мяса</a></li>
+            </div>
+            <!-- </div> <div class="burgers__nav">
+                    <li class=""><a href="#" class="burgers__link">Бургеры</a></li>
+                </div> <div class="burgers__nav">
+                    <li class="><a href="#" class="burgers__link">Бургеры</a></li>
+                </div> <div class="burgers__nav">
+                    <li class=""><a href="#" class="burgers__link">Бургеры</a></li>
+                </div> <div class="burgers__nav">
+                     <li class=""><a href="#" class="burgers__link">Бургеры</a></li>
+                </div> -->
+        </div>
+
+
+            
+        <div class="main-blocks__rows">
+            
+
+                <div class="burgers__catalog">
+                    <div data-id="01" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                        <h2 class="blocks__title">Чикенбургер</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one"><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>                        
+                    </div>
+                    <div data-id="01" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                        <h2 class="blocks__title">Чикенбургер</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one"><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>                        
+                    </div>
+                    <div data-id="01" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                        <h2 class="blocks__title">Чикенбургер</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one"><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>                        
+                    </div>
+
+                    <div data-id="02" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                        <h2 class="blocks__title">Макдоналдс</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>   
+                    </div>
+                    <div data-id="02" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                        <h2 class="blocks__title">Макдоналдс</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p  class="minus" class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>   
+                    </div>
+                      <div data-id="02" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                        <h2 class="blocks__title">Макдоналдс</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>                   
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>   
+                    </div>
+                    <div data-id="04" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                          <h2 class="blocks__title">Чикенбургер</h2>
+                          <div class="burgers-blocks__text">
+                              <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                          </div>
+                          <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p  class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>                        </div>
+                      
+      
+                      
+      
+                      <div data-id="05" class="burgers__blocks">
+                          <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                          <h2 class="blocks__title">Чикенбургер</h2>
+                          <div class="burgers-blocks__text">
+                              <p data-items-in-box class="blocks__text"> Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                          </div>
+                          <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>
+     
+                      </div>
+                      <div data-id="06" class="burgers__blocks">
+                          <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                          <h2 class="blocks__title">Чикенбургер</h2>
+                          <div class="burgers-blocks__text">
+                              <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                          </div>
+                          <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>                      
+                    </div>
+                   
+                   
+                    <div data-id="03" class="burgers__blocks">
+                        <img class="blocks__img" src="./images/0000_Chickenburger_BB_1500x1500_min.webp" alt=""></li>
+                        <h2 class="blocks__title">Чикенбургер</h2>
+                        <div class="burgers-blocks__text">
+                            <p data-items-in-box class="blocks__text">Состав бургера и прочий текст и прочий текст и прочий текст</p>
+                        </div>        
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus" data-action="minus"><p class="minus" id="down" data-action="minus">-</p></div>
+                            <div id="numericUpDown" value="1" class="items__control-one" data-counter><p value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div id="up" class="items__control-plus" data-action="plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+              
+                        <div class="blocks-flex__button">
+                            <button data-action="btn" id="block" class="add__cart">69 руб</button>
+                        </div>     
+                    </div>
+                    
+                    
+                    </div>
+
+
+                    
+                    <!-- <div class="cart__wrapper">
+                        <div class="burgers-cart__body">
+                            <div class="burgers-cart__title">
+                                <h2>Ваш заказ</h2>
+                            </div>
+                            <div data-id="03" class="cart__blocks">
+                                <img class="cart__img" src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                                <p class="cart__title">Чикенбургер</p>
+                                <div class="blocks__button">
+                                    <div class="cart__control-minus" data-action="minus">-</div>
+                                    <div class="cart__control-one" data-counter>1</div>
+                                    <div class="cart__control-plus" data-action="plus">+</div>
+                                </div>
+                                <p class="cart__price">69 руб</p>
+        
+                            </div>
+                            <button data-test="btn" id="block" class="cart__btn">Оформить Заказ</button>
+                        </div>
+                        </div> -->
+                     </div>
+                     <div class="addCart__block">
+
+                         <div class="AddCart">
+                             <p>1 блюдо в корзине на 69 руб</p>
+    
+                             <div class="Add-cart__link">
+                                <a href="Cart.html">Перейти в корзину</a>
+                          </div>
+                         </div>
+                     </div>
+
+                     <div id="my_modal" class="modal">
+                        <div class="modal_content">
+                          <h1>Авторизация</h1>
+                          <p>Телефон</p>
+                          <form class="header__form">
+                              <input placeholder="+7 (999) 999-99-99" class="header__input" type="text">
+                          </form>
+                          <div class="modal__text">
+                              <p>Указывая номер телефона вы принимаете <a href="#"> условия соглашения</a> и даете согласие на обработку персональных данных</p>
+                          </div>
+                          <div class="header-form__button">
+                              <a href="Auth.html">Далее</a>
+                              <img src="./icons/modal-strelka.png" alt="">
+                          </div>
+                          <!-- <span class="close_modal_window">×</span> -->
+                      </div>
+                      </div>
+                      
+                </div>
+    </main>
+
+  
+
+    <footer class="footer__kich">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__block-1">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <img src="images/logo.svg" alt="">
+                            <div class="footer__span">
+                                <span></span>
+                            </div>
+                            <div class="footer__button">
+                                <a class="footer__btn" href="#">Стать партнером</a>
+                            </div>
+                            <div class="block__link">
+                                <a href="#">Пользовательское соглашение</a>
+                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">Служба технической поддержки</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                   
+                </div>
+
+                
+                <div class="footer__column-two">
+                    
+                </div>
+
+                <div class="footer__block-2">
+                    <div class="footer__column-two">
+                        <div class="block__text">
+                            <p>Присоединяйтесь к нам</p>
+                            <p>Заказывайте с телефона</p>
+                        </div>
+                        <div class="block__img">
+                            <div class="block-img__icons">
+                                <div class="block-img__icon">
+                                    <img class="cdcdd" src="icons/facebook-f-brands.svg" alt="">
+                                </div>
+                                <div class="block-img__icon">
+                                    <img src="icons/instagram-brands.svg" alt="">
+                                </div> 
+                                <div class="block-img__icon">
+                                    <img src="icons/twitter-brands.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="footer__stores">
+                                <img src="images/block-store2.jpg" alt="">
+                                <img src="images/block-store2.jpg" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+            </div>
+            <div class="footer-end__text">
+                <p>© 2022, ООО «Спасибо», официальный сайт</p>
+            </div>
+        </div>
+        <hr class="footer__hr">
+
+    </footer>
+    
+
+    
+    <script src="js/kitchens.js"></script>
+
+
+
+  <!--jQuery CDN -------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link Swiper's CSS ------------------------------>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+
+
+
+
+    <!--Font Family ------------------------------------->
+
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <!--jQuery CDN -------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+     <!-- Swiper JS ------------------------------------->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+      <!-- link CCSS------------------------------------->
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/aboutUs.css">
+      <link rel="stylesheet" href="css/about.css">
+      <link rel="stylesheet" href="css/checkout.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/authorization.css">
+    
+
+
+
+
+
+
+
+
+
+
+    <title>FoodApps</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__rown">
+                    <div class="header__logo">
+                        <a href="home.html"><img src="./images/logo.svg" alt=""></a> 
+                    </div>
+                    <div class="header__navigation">
+                        <li class="header__link"><a class="link__active" href="home.html">Главная</a></li>
+                        <li class="header__link"><a href="about.html">Поиск ресторана</a></li>
+                        <li class="header__link"><a href="Partners.html">Партнерам</a></li>
+                        <li class="header__link"><a href="AboutUs.html">О нас</a></li>
+                    </div>
+
+                     <div class="header__auth">
+                        <li class="header__link"><a id="btn_modal_window" class="header__btn" href="#">Войти</a></li>
+                    </div>
+                   
+                    <div class="header__cart">
+                        <a href="Cart.html"><img src="./images/cart.png" alt=""></a>
+                    </div>
+
+
+
+                </div>
+               
+            </div>
+            <hr class="header__hr">
+
+        </header>
+
+
+
+        <main class="page">
+            <div class="page__container container">
+                <section class="carouselics">
+                    <div id="carousel" class="carousel">
+                        <div id="prs">
+                            <button class="arrow prev">
+                            <img src="./images/rig-1.png" alt="">
+                            </button>
+                        </div>
+                        <div class="gallery">
+                          <ul>
+                            <li><img src="https://www.litres.ru/static/pr/news/delivery_.jpg"></li>
+                            <li><img src="https://telegra.ph/file/20fc67d899ef466a4486c.jpg"></li>
+                            <li><img src="https://telegra.ph/file/3aadef44bd2036663a0c5.jpg"></li>
+                            <li><img src="https://telegra.ph/file/493397a5a7af419d1c2f1.jpg"></li>
+                            <li><img src="https://mcdonalds.ru/upload/iblock/e61/SITEn_BM89_1280x700_min.jpg"></li>
+                            <li><img src="https://dostavkaruservice.ru/wp-content/uploads/2020/07/akcii.jpg"></li>
+                            <li><img src="https://telegra.ph/file/780ca866cd5fcda674d78.jpg"></li>
+        
+                          </ul>
+                        </div>
+                        <button class="arrow next">
+                            <img src="./images/rig-1.png" alt="">
+                        </button>
+                </section>
+               
+                <!--Page Content-------------------------------------------------------------------->
+
+                <section class="page__content">
+                    <div class="page__title">
+                        <li class="page__link page-link__bold"><a href="#">Рестораны</a></li>
+                        <li class="page__link"><a href="#">Продукты</a></li>
+                        <li class="page__link"><a href="#">Детям</a></li>
+                        <li class="page__link"><a href="#">Вода</a></li>
+                        <li class="page__link"><a href="#">Аптеки</a></li>
+                        <li class="page__link"><a href="#">Цветы</a></li>
+                        <li class="page__link"><a href="#">Бытовая химия</a></li>
+                        <li class="page__link"><a href="#">Остальное</a></li>
+                    </div>
+
+                    <!-- Page Filtr --------------------------------------------------->
+                    <div class="page__filt">
+                        <div class="filtr__image">
+                            <img src="./icons/coolicon (1).svg" alt="">
+                        </div>
+        
+                        <div class="filtr__button">
+                            <div id="sweeties" class="menu">
+                                <div class="title"><p>Кухни</p></div>
+                                <ul>
+                                    <div class="filtr__menu">
+                                        <div class="menu__list">
+                                            <li>Пицца</li>
+                                            <input class="checkbox" type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div>
+                                        <hr class="hr__filt">
+                                         <div class="menu__list">
+                                            <li>Суши</li>
+                                            <input type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div> 
+                                        <hr class="hr__filt">
+                                        <div class="menu__list">
+                                            <li>Бургеры</li>
+                                            <input type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div> 
+                                        <hr class="hr__filt">
+                                        <div class="menu__list">
+                                            <li>Гриль</li>
+                                            <input type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div> <hr class="hr__filt"> <div class="menu__list">
+                                            <li>Десерты</li>
+                                            <input type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div> <hr class="hr__filt"> <div class="menu__list">
+                                            <li>Правильное питание</li>
+                                            <input type="checkbox" id="scales" name="scales"
+                                            checked>
+                                        </div> 
+                                        <hr class="hr__filt">
+                                        <div class="menu-flex__button">
+                                            <div class="menu__button">
+                                                <a class="menu__btn" href="Kitchens.html">Применить</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </ul>
+                            
+                              </div>
+                            <img class="filtr-button-srtelka" src="icons/strelka.svg" alt="">
+
+                        </div>
+                        <div class="filtr__button-hert">
+                            <a href="#">Избранные</a>
+                            <img src="icons/hert.svg" alt="">
+                        </div>
+                       
+                        </div>
+
+                      
+
+                    <!-- Page Catalog ------------------------------------------------>
+                    <div class="page__catalog catalog">
+                        
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html"catalog__img"><img src="./images/5102496a6c422d71993968318ea47482.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                            <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                      
+
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Domino's Pizza</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                       
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/c46e1368d0a6960bc3b5620043663bb1.png" alt=""></a>
+                            <h2>Burger King</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                        
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/e474812f4f71f3824e2169ea44af9629.png" alt=""></a>
+                            <h2>Domino's Pizza</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/e474812f4f71f3824e2169ea44af9629.png" alt=""></a>
+                            <h2>Мир Донера</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/c46e1368d0a6960bc3b5620043663bb1.png" alt=""></a>
+                            <h2>Burger King</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html"catalog__img"><img src="./images/5102496a6c422d71993968318ea47482.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                            <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/e474812f4f71f3824e2169ea44af9629.png" alt=""></a>
+                            <h2>Мир Донера</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                       
+                    </div>
+
+                <!--Page Catalog To------------------------------------------->
+
+                    <div id="box" style="display: none;" class="page__catalog_to">
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/c46e1368d0a6960bc3b5620043663bb1.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                       
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/e474812f4f71f3824e2169ea44af9629.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                       
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/5102496a6c422d71993968318ea47482.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <div class="block-time">
+                        <h4>от 80 мин</h4>
+                    </div>
+                        </div>
+                       
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <dpage__catalog-btniv class="block-time">
+                        <h4>от 80 мин</h4>
+                        </div>  
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <dpage__catalog-btniv class="block-time">
+                        <h4>от 80 мин</h4>
+                        </div>  
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <dpage__catalog-btniv class="block-time">
+                        <h4>от 80 мин</h4>
+                        </div>  
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <dpage__catalog-btniv class="block-time">
+                        <h4>от 80 мин</h4>
+                        </div>  
+                        
+                        <div class="catalog__blocks">
+                            <a href="Kitchens.html" class="catalog__img"><img src="./images/33182cbe3d9d21e87b538e3c6e4d1a59.png" alt=""></a>
+                            <h2>Макдоналдс</h2>
+                             <h4>★ 5</h4>
+                        <h4 class="₽₽₽">₽₽₽</h4>
+                         <dpage__catalog-btniv class="block-time">
+                        <h4>от 80 мин</h4>
+                        </div>  
+                    </div>
+
+                    <!--Catalog__Button------------------------------------------->
+
+                    <div class="catalog__button">
+                        <div class="catalog-button-row">
+                            <div class="catalog__button-close">
+                                <a  href="#"><img src="./icons/coolicon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__button-open">
+                        <a class="catalog__btn-open" href="#" onclick="openbox('box')"; return="false">Показать еще</a>
+                    </div>
+                </section>
+
+                <!-- Modal -------------------------------------------------------------->
+              
+              
+                <div class="model__auth">
+
+                    
+                       <div data-target="one" class="header-loginForm__body">
+      
+                          <div class="header-loginForm__title">
+                              <h1>Авторизация</h1>
+                              <p>Телефон</p>
+                          </div>
+                       
+          
+                           <div class="header-loginForm__form">
+                              <form class="header__form">
+                                  <input placeholder="+7 (999) 999-99-99" class="header__input" type="text">
+                              </form>
+                              <div class="header-form__text">
+                                  <p>Указывая номер телефона вы принимаете <a href="#"> условия соглашения</a> и даете согласие на обработку персональных данных</p>
+                              </div>
+          
+                              <div class="header-form__button">
+                                  <a href="Auth.html">Далее</a>
+                              </div>
+          
+                          </div>
+                          
+                      </div> 
+                      <li></li>
+      
+      
+                      <div id="my_modal" class="modal">
+                        <div class="modal_content">
+                          <h1>Авторизация</h1>
+                          <p>Телефон</p>
+                          <form class="header__form">
+                              <input placeholder="+7 (999) 999-99-99" class="header__input" type="text">
+                          </form>
+                          <div class="modal__text">
+                              <p>Указывая номер телефона вы принимаете <a href="#"> условия соглашения</a> и даете согласие на обработку персональных данных</p>
+                          </div>
+                          <div class="header-form__button">
+                              <a href="Auth.html">Далее</a>
+                              <img src="./icons/modal-strelka.png" alt="">
+                          </div>
+                          <!-- <span class="close_modal_window">×</span> -->
+                      </div>
+                      </div>
+                </div>
+
+        </main>
+
+
+        <!-- Footer --------------------------------------------------------------------->
+
+       
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <div class="footer__block-1">
+                        <div class="footer__column">
+                            <div class="footer__logo">
+                                <img src="images/logo.svg" alt="">
+                                <div class="footer__span">
+                                    <span></span>
+                                </div>
+                                <div class="footer__button">
+                                    <a class="footer__btn" href="#">Стать партнером</a>
+                                </div>
+                                <div class="block__link">
+                                    <a href="#">Пользовательское соглашение</a>
+                                    <a href="#">Политика конфиденциальности</a>
+               
+               
+               <a href="#">Служба технической поддержки</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                       
+                    </div>
+
+                    
+                    <div class="footer__column-two">
+                        
+                    </div>
+
+                    <div class="footer__block-2">
+                        <div class="footer__column-two">
+                            <div class="block__text">
+                                <p>Присоединяйтесь к нам</p>
+                                <p>Заказывайте с телефона</p>
+                            </div>
+                            <div class="block__img">
+                                <div class="block-img__icons">
+                                    <div class="block-img__icon">
+                                        <img class="cdcdd" src="icons/facebook-f-brands.svg" alt="">
+                                    </div>
+                                    <div class="block-img__icon">
+                                        <img src="icons/instagram-brands.svg" alt="">
+                                    </div> 
+                                    <div class="block-img__icon">
+                                        <img src="icons/twitter-brands.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="footer__stores">
+                                    <img src="images/block-store2.jpg" alt="">
+                                    <img src="images/block-store2.jpg" alt="">
+                                </div>
+                            
+                            </div>
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+                <div class="footer-end__text">
+                    <p>© 2022, ООО «Спасибо», официальный сайт</p>
+                </div>
+            </div>
+            <hr class="footer__hr">
+
+        </footer>
+    </div>
+
+
+    <script>
+        let menuElem = document.getElementById('sweeties');
+        let titleElem = menuElem.querySelector('.title');
+    
+        titleElem.onclick = function() {
+          menuElem.classList.toggle('open');
+        };
+      </script>
+
+
+    
+    <!-- <script src="/js/home.js"></script> -->
+    <script src="https://kit.fontawesome.com/4255727fb2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./js/corusel.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

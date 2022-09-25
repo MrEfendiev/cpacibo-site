@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- link Swiper's CSS ------------------------------>
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  
+      <!--Font Family ------------------------------------->
+  
+      <link rel="stylesheet" href="./fonts/stylesheet.css">
+  
+      <!--jQuery CDN -------------------------------------->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  
+       <!-- Swiper JS ------------------------------------->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+  
+        <!-- link CCSS------------------------------------->
+  
+     
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/aboutUs.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/Partners.css">
+        <link rel="stylesheet" href="css/authorization.css">
+          <link rel="stylesheet" href="css/maps.css">
+
+
+
+
+
+
+        
+
+    <title>Reviews</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__rown">
+                <div class="header__logo">
+                    <a href="home.html"><img src="./images/logo.svg" alt=""></a> 
+                </div>
+                <div class="header__navigation">
+                    <li class="header__link"><a href="home.html">Главная</a></li>
+                        <li class="header__link"><a href="about.html">Поиск ресторана</a></li>
+                        <li class="header__link"><a class="partners__active" class="link__active" href="Partners.html">Партнерам</a></li>
+                        <li class="header__link"><a href="AboutUs.html">О нас</a></li>
+                </div>
+
+                <div class="header__auth">
+                    <li class="header__link"><a id="btn_modal_window" class="header__btn" href="#">Войти</a></li>
+                </div>
+               
+                <div class="header__cart">
+                    <img src="./images/cart.png" alt="">
+                </div>
+
+
+
+            </div>
+
+            <div class="maps__container">
+
+                <div id="maps__none" class="header-cart__maps">
+                    <div class="maps__content">
+                        <div class="head__row">
+                            <div class="head__title">
+                                <h1>Уточните ваш адрес</h1>
+                            </div>
+                            <p class="maps__text">Укажите на карте точку на месте куда нужно доставить</p>
+            
+                        </div>
+                        <div class="head__flex-button">
+                            <div class="head__button">
+                                <a href="#">Магомедтагирова 39, д.5</a>
+                                <img src="icons/maps-strelka.png" alt="">
+                            </div>
+                        </div>
+
+                       
+                        <div class="maps">
+                            <div class="main-maps__input">
+                                <input type="text" placeholder="Магомедтагирова 39, д.5">
+                                <div class="maps-input__button">
+                                    <a href="/ Checkout.html">Готово</a>
+                                </div>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d581028.0052006432!2d37.168319!3d55.329361!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1647519373439!5m2!1sru!2sru" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        <hr>
+
+    </header>
+
+
+
+    <main class="main__cart cart">
+        <div class="cart__container container">
+            <div class="cart__title">
+                <!-- <h1>Корзина пуста</h1> -->
+                <h1>1 блюдо на 69 руб</h1>
+            </div>
+            <div class="cart-wrapper__blocks">
+                <div class="cart__blocks">
+                    <div class="carb-lock__image">
+                        <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                    </div>
+                    <div class="cart-block__content">
+                        <h2>Чикенбургер</h2>
+                        <p>40 грамм</p>
+                        <div id="blocks" class="blocks__button">
+                            <div class="items__control-minus"><p class="blocks__button-p"  id="down" data-action="minus">-</p></div>
+                            <div><p class="items__control-one" value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div class="items__control-plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__blocks-two">
+                    <div class="carb-lock__image-two">
+                        <img src="images/pribors.jpg" alt="">
+                    </div>
+                    <div class="cart-block__content">
+                        <div id="blocks" class="blocks__button blocks__button-two">
+                            <div class="items__control-minus"><p class="blocks__button-p"  id="down" data-action="minus">-</p></div>
+                            <div><p class="items__control-one" value="1" id="numericUpDown" data-counter>1</p></div>
+                            <div class="items__control-plus"><p id="up" data-action="plus">+</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-wrapper__tittle">
+                    <h2>Рекомендации</h2>
+                </div>
+                
+            </div>
+
+           
+              
+
+            <!-- <div class="cart__image">
+                <img src="images/404fa7d7-e1a4-462c-adb2-d9a84aa5b18e.jpg" alt="">
+            </div> -->
+            <div class="cart__button">
+                <a href="home.html">Вернуться к выбору еды</a>
+            </div>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="slide__block">
+                    <div class="slide__image">
+                        <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                    </div>
+                      <div class="slide-block__content">
+                        <h2>Чикенбургер</h2>
+                        <button class="slide__button">Добавить</button>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__block">
+                        <div class="slide__image">
+                            <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                        </div>
+                          <div class="slide-block__content">
+                            <h2>Чикенбургер</h2>
+                            <button class="slide__button">Добавить</button>
+                        </div>
+                    </div>
+                    
+                  </div>              
+                <div class="swiper-slide">  
+                    <div class="slide__block">
+                        <div class="slide__image">
+                            <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                        </div>                    <div class="slide-block__content">
+                        <h2>Чикенбургер</h2>
+                        <button class="slide__button">Добавить</button>
+                    </div>
+              </div>
+              </div>
+              <div class="swiper-slide">  <div class="slide__block">
+                <div class="slide__image">
+                    <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                </div>                <div class="slide-block__content">
+                    <h2>Чикенбургер</h2>
+                    <button class="slide__button">Добавить</button>
+                </div>
+          </div>
+          </div>
+              <div class="swiper-slide">  <div class="slide__block">
+                <div class="slide__image">
+                    <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                </div>                <div class="slide-block__content">
+                    <h2>Чикенбургер</h2>
+                    <button class="slide__button">Добавить</button>
+                </div>
+          </div>
+         </div>
+              <div class="swiper-slide">  <div class="slide__block">
+                <div class="slide__image">
+                    <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                </div>                <div class="slide-block__content">
+                    <h2>Чикенбургер</h2>
+                    <button class="slide__button">Добавить</button>
+                </div>
+          </div>
+        </div>
+              <div class="swiper-slide">  <div class="slide__block">
+                <div class="slide__image">
+                    <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                </div>                <div class="slide-block__content">
+                    <h2>Чикенбургер</h2>
+                    <button class="slide__button">Добавить</button>
+                </div>
+          </div>
+         </div>
+              <div class="swiper-slide">  <div class="slide__block">
+                <div class="slide__image">
+                    <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+                </div>                <div class="slide-block__content">
+                    <h2>Чикенбургер</h2>
+                    <button class="slide__button">Добавить</button>
+                </div>
+          </div>
+         </div>
+         <div class="swiper-slide">  <div class="slide__block">
+            <div class="slide__image">
+                <img src="images/0000_Chickenburger_BB_1500x1500_min.webp" alt="">
+            </div>                <div class="slide-block__content">
+                <h2>Чикенбургер</h2>
+                <button class="slide__button">Добавить</button>
+            </div>
+      </div>
+     </div>
+                <!-- </div> -->
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+            <img src="images/rig-1.png" alt="">
+        </div>
+
+        <div class="swiper-button-next">
+            <img src="images/rig-1.png" alt="">
+      </div>
+      <div class="addCart__block">
+
+        <div class="AddCart">
+            <p>Вам не хватает 651 руб для бесплатной доставки</p>
+
+            <div class="Add-cart__link">
+               <a id="add__maps" href="#">Оформить заказ - 69 руб</a>
+         </div>
+        </div>
+    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+           
+          </div>
+
+          <div id="my_modal" class="modal">
+            <div class="modal_content">
+              <h1>Авторизация</h1>
+              <p>Телефон</p>
+              <form class="header__form">
+                  <input placeholder="+7 (999) 999-99-99" class="header__input" type="text">
+              </form>
+              <div class="modal__text">
+                  <p>Указывая номер телефона вы принимаете <a href="#"> условия соглашения</a> и даете согласие на обработку персональных данных</p>
+              </div>
+              <div class="header-form__button">
+                  <a href="Auth.html">Далее</a>
+                  <img src="./icons/modal-strelka.png" alt="">
+              </div>
+              <!-- <span class="close_modal_window">×</span> -->
+          </div>
+          
+          </div>
+          
+        </div>
+
+
+
+         
+    </main>
+
+   
+    <footer class="footer cart">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__block-1">
+                    <div class="footer__column">
+                        <div class="footer__logo">
+                            <img src="images/logo.svg" alt="">
+                            <div class="footer__span">
+                                <span></span>
+                            </div>
+                            <div class="footer__button">
+                                <a class="footer__btn" href="#">Стать партнером</a>
+                            </div>
+                            <div class="block__link">
+                                <a href="#">Пользовательское соглашение</a>
+                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">Служба технической поддержки</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                   
+                </div>
+
+                
+                <div class="footer__column-two">
+                    
+                </div>
+
+                <div class="footer__block-2">
+                    <div class="footer__column-two">
+                        <div class="block__text">
+                            <p>Присоединяйтесь к нам</p>
+                            <p>Заказывайте с телефона</p>
+                        </div>
+                        <div class="block__img">
+                            <div class="block-img__icons">
+                                <div class="block-img__icon">
+                                    <img class="cdcdd" src="icons/facebook-f-brands.svg" alt="">
+                                </div>
+                                <div class="block-img__icon">
+                                    <img src="icons/instagram-brands.svg" alt="">
+                                </div> 
+                                <div class="block-img__icon">
+                                    <img src="icons/twitter-brands.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="footer__stores">
+                                <img src="images/block-store2.jpg" alt="">
+                                <img src="images/block-store2.jpg" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+            </div>
+            <div class="footer-end__text">
+                <p>© 2022, ООО «Спасибо», официальный сайт</p>
+            </div>
+        </div>
+        <hr class="footer__hr">
+
+    </footer>css/
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        //   centeredSlides: true,
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+
+          }
+        });
+
+</script>
+
+<script src="./js/cart.js"></script>
+<script src="./js/auth.js"></script>
+<script src="./js/maps.js"></script>
+
+</body>
+</html>

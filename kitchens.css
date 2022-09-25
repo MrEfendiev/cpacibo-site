@@ -1,0 +1,736 @@
+@charset "UTF-8";
+@import url(/fonts/stylesheet.css);
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Font-famaly/ProximaNova-Semibold";
+  src: url(/Font-famaly/ProximaNova-Semibold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Font-famaly/Black/ProximaNova-Black";
+  src: url(/Font-famaly/Black/ProximaNova-Extrabld.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* hr {
+  border: 1px solid #F2F2F2;
+} */
+
+
+body
+{
+  background-color: #F8F8F8;
+}
+
+.footer__kich
+{
+  margin-top: 200px;
+}
+
+
+.kitchens__hr{
+    position: relative;
+    top: -306px;
+    border: 1px solid #F2F2F2;
+
+
+}
+
+header {
+  overflow: hidden;
+  background: #FFFFFF;
+
+
+}
+
+.kitchens__logo
+{
+  background: #FFFFFF;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+.header__title h1 {
+  font-family: "Font-famaly/Black/ProximaNova-Black";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.header__image {
+  width: 170px;
+  height: 170px;
+}
+.header__image img {
+  width: 170px;
+  height: 170px;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.15);
+  border-radius: 160px;
+}
+
+.header__subtitle {
+  margin-left: 55px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.header__text {
+  position: relative;
+  top: -80px;
+  left: 178px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__text span {
+  position: relative;
+  left: 27px;
+  width: 1px;
+  height: 32.5px;
+  background: #979797;
+}
+.header__text p {
+  font-family: "Font-famaly/ProximaNova-Semibold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 54px;
+  color: #979797;
+}
+
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -50px;
+  left: 200px;
+}
+
+
+
+.header__button .header__btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 64px;
+  margin-left: 32px;
+  background: #FAFAFA;
+  border-radius: 10px;
+}
+
+.header__button .header__btn img {
+  width: 20px;
+}
+
+.header__button .header__btn a {
+  position: relative;
+  left: -10px;
+  font-family: "Font-famaly/ProximaNova-Semibold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #A0A0A0;
+}
+
+.header__input 
+{
+  margin-left: 36px;
+
+}
+
+.header__input input
+{
+  font-size: 23px;
+  text-indent: 30px;
+  outline: none;
+  width: 508px;
+  height: 64px; 
+
+  background: #FAFAFA;
+  border: 10px solid #FAFAFA;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__input input::placeholder
+{
+
+  font-family: "Font-famaly/ProximaNova-Semibold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #A0A0A0;
+
+}
+
+
+
+
+
+
+
+
+.main__burgers {
+  width: 100%;
+  flex-grow: 1;
+  background: #F8F8F8;
+  overflow: hidden;
+  
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.burgers__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -22.5px;
+
+}
+
+.burgers__nav {
+  position: relative;
+  margin-top: 29px;
+  width: 180.5px;
+  height: 55px;
+  margin-left: 22.5px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.burgers__nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  font-family: 'Proxima Nova Lt';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.burgers__nav:hover {
+  -webkit-animation: burgers__nav 1s forwards;
+          animation: burgers__nav 1s forwards;
+}
+
+.burgers__active {
+  width: 201px;
+  height: 55px;
+  background: #2CC700;
+  border-radius: 10px;
+}
+.burgers__active a {
+  color: #FFFFFF;
+}
+
+.main-blocks__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  /* position: relative; */
+}
+
+
+
+
+
+.burgers__catalog {
+  display: flex;
+  margin-left: -20px;
+  flex-wrap: wrap;
+  
+}
+
+
+
+
+
+ .burgers__blocks {
+  cursor: pointer;
+  position: relative;
+  width: 244px;
+  height: 390px;
+  margin-left: 13px;
+  margin-top: 37px;
+  background: #FFFFFF;
+  border-radius: 17px;
+}
+.burgers__blocks img {
+  margin-top: -20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+.burgers__blocks h2 {
+  margin-left: 18px;
+  font-family: 'ProximaNova-Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.burgers__blocks .burgers-blocks__text {
+  margin-top: 14px;
+  margin-left: 18px;
+  width: 200px;
+}
+.burgers__blocks .burgers-blocks__text .blocks__text {
+  margin-top: 14px;
+  font-family: "ProximaNovaT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.burgers__blocks .price__text {
+  position: relative;
+  top: -35px;
+  left: 150px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 17px;
+  color: #2CC700;
+}
+
+
+.add__cart {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 216px;
+  height: 50.73px;
+  background: #2CC700;
+  border-radius: 7px;
+  border: 1px solid #2CC700;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.cart__wrapper {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 50px;
+}
+.cart__wrapper .burgers-cart__body {
+  position: relative;
+  width: 400px;
+  min-height: 507px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 63px -10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 63px -10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+.cart__wrapper .burgers-cart__body h2 {
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 48px;
+}
+
+.burgers-cart__body {
+  margin-top: 70px;
+}
+
+.cart__blocks {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cart__blocks img {
+  width: 150px;
+}
+.cart__blocks .cart__text {
+  margin-top: 8px;
+  margin-left: 20px;
+  font-size: 23px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+}
+
+.cart__control-minus {
+  position: relative;
+  font-size: 23px;
+  left: -20px;
+}
+
+.cart__control-one {
+  position: relative;
+  font-size: 23px;
+}
+
+.cart__control-plus {
+  position: relative;
+  font-size: 20px;
+  left: 20px;
+}
+
+.cart__price {
+  position: relative;
+  top: -30px;
+  left: 42%;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2CC700;
+}
+
+.cart__btn {
+  cursor: pointer;
+  margin-left: 67px;
+  margin-top: 40px;
+  width: 220px;
+  height: 43.73px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  background: #F8F8F8;
+  border-radius: 7px;
+}
+
+.blocks__button div {
+  cursor: pointer;
+}
+
+.footer__img {
+  width: 30.95px;
+  height: 30px;
+  background: #ECECEC;
+  border-radius: 6px;
+}
+.footer__img img {
+  position: relative;
+}
+
+
+.burgers__blocks
+{
+  transition: 0.3s;
+}
+
+.burgers__blocks:hover
+{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+
+.burgers__nav
+{
+  transition: 0.3s;
+}
+
+.burgers__nav:hover
+{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+.addCart__block
+{
+  display: none;
+  position: relative;
+}
+
+.AddCart
+{
+  position: fixed;
+  z-index: 100;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 65%;
+  margin-left: -10px;
+  align-items: center;
+  width: 1280px;
+  height: 100px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 13px;
+}
+
+
+
+.Add-cart__link
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Add-cart__link a 
+{ 
+  font-family: 'Proxima Nova Lt';
+  position: relative;
+  left: -50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #2CC700;
+}
+
+
+.AddCart p 
+{
+  
+  margin-left: 80px;
+  width: 400px;
+  font-family: 'Proxima Nova Lt';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #828282;
+}
+
+.blocks__button img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.items__control-plus
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 47px;
+  margin-left: 167px;
+
+  width: 48px;
+  height: 44px;
+
+  background: #2CC700;
+  border-radius: 7px;
+
+  color: #ffff;
+  transition: 0.4s;
+}
+
+.items__control-plus p
+{
+  font-size: 40px;
+}
+
+.items__control-plus:hover
+{
+  background-color: orange;
+}
+
+
+
+.items__control-minus
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  width: 48px;
+  height: 44px;
+
+  background: #2CC700;
+  border-radius: 7px;
+  color: #ffff;
+  transition: 0.4s;
+
+}
+.items__control-minus:hover
+{
+  background-color: orange;
+}
+
+
+
+.items__control-minus p 
+{
+  font-size: 45px;
+
+}
+
+
+.items__control-one
+{
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;  
+  top: 305px;
+  left: 112px;
+  color: black;
+}
+
+.blocks-flex__button
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url(/fonts/stylesheet.css);
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1
+{
+  font-family: 'Proxima Nova Th';
+
+}
+
+footer
+
+{
+  margin-top: 100px;
+}
+
+.about__main
+{
+  width: 100%;
+  flex-grow: 1;
+}
+
+.active__about {
+  color: #000000;
+  opacity: 1;
+  color: #000000;
+}
+.active__about::before {
+  content: "";
+  top: 50px;
+  left: 49px;
+  position: absolute;
+  width: 135px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+
+
+
+.about__search {
+  margin-top: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about__search input {
+  text-indent: 33px;
+  font-size: 22px;
+  width: 532px;
+  height: 62px;
+  background: #FAFAFA;
+  border: 1px solid #E9E9E9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+.about__search input::-webkit-input-placeholder {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+}
+.about__search input::-moz-placeholder {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+}
+.about__search input:-ms-input-placeholder {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+}
+.about__search input::-ms-input-placeholder {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+}
+.about__search input::placeholder {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+}
+.about__search .about__button {
+  margin-left: 17px;
+  width: 127.19px;
+  height: 62px;
+  background: #2CC700;
+  border-radius: 10px;
+}
+.about__search .about__button a {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.about__title {
+  margin-top: 78px;
+}
+.about__title h1 {
+  font-family: 'Proxima Nova Th';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about__catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+}
+
+/*  */
+
+
+
+

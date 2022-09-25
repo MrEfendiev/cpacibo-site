@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url(/fonts/stylesheet.css);
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+.model__auth
+{
+  width: 20px;
+}
+
+
+.modal_content
+{
+  width: 786px;
+  height: 568px;
+
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 100px -16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.modal_content h1 
+{
+  margin-left: 71px;
+  margin-top: 11px;
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 78px;
+
+  color: #000000;
+
+}
+
+
+.modal_content input
+{
+  margin-top: 20px;
+  margin-left: 71px;
+  text-indent: 33px;
+  outline: none;
+  width: 834px;
+  height: 62px;
+  font-size: 23px;
+
+  background: #FAFAFA;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.modal_content input::placeholder
+{
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 22px;
+
+  color: #969696;
+
+}
+
+
+
+
+.modal_content p 
+{
+  margin-top: 20px;
+  margin-left: 71px;
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.modal__text
+{
+  width: 800px;
+}
+
+.modal__text p 
+{
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+
+  color: #A6A6A6;
+}
+
+.header-form__button
+{
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 258px;
+  height: 62px;
+  
+  margin-left: 71px;
+
+  background: #2CC700;
+  border-radius: 10px;
+
+}
+
+.header-form__button a{
+  margin-left: -15px;
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+
+
+.modal__text a 
+{
+  color: #2CC700;
+}
